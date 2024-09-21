@@ -1,0 +1,1 @@
+ALTER TABLE "api-endpoints" ALTER COLUMN "slug" SET DATA TYPE varchar(260);

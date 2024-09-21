@@ -1,0 +1,1 @@
+ALTER TABLE "api-endpoints" RENAME COLUMN "name" TO "slug";
