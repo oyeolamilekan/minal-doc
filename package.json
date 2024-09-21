@@ -11,7 +11,8 @@
     "build:web": "pnpm --filter web build",
     "start:server": "pnpm --filter server start:prod",
     "start:web": "pnpm --filter web start",
-    "start": "pnpm run --parallel start"
+    "start": "pnpm run --parallel start",
+    "build": "pnpm run --parallel build"
   },
   "keywords": [],
   "author": "",
