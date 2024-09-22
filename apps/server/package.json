@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/server.ts",
+  "type": "module",
   "scripts": {
     "build": "esbuild src/server.ts --bundle --outfile=build/server.js --platform=node --format=esm --packages=external",
-    "start": "node build/server.js",
+    "start": "pnpm with-env node build/server.js",
     "dev": "pnpm with-env tsx watch src/server.ts",
     "generate": "drizzle-kit generate",
     "migrate": "pnpm with-env tsx src/models/migrate.ts",
-    "with-env": "dotenv -e ../../.env -c --"
+    "with-env": "dotenv -e ../../.env"
   },
   "keywords": [],
   "author": "",
